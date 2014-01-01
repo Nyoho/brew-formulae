@@ -1,6 +1,8 @@
 My formulae for Homebrew
 ========================
 
+My local formulae for Homebrew
+
 ## emacs.rb
 
 A formula for Cocoa Emacs picked and stealed from:
