@@ -47,8 +47,9 @@ class Emacs < Formula
     # "--japanese" option:
     # to apply a patch from MacEmacsJP for Japanese input methods
     if build.include? "cocoa" and build.include? "japanese"
-      # p[:p0].push("http://sourceforge.jp/projects/macemacsjp/svn/view/inline_patch/trunk/emacs-inline.patch?view=co&revision=583&root=macemacsjp&pathrev=583")
-      p[:p0].push("https://gist.github.com/anonymous/8142555/raw/d67ad1dc814579d125afbd18de3a62ba69895601/emacs-inline.patch")
+      p[:p1].push("https://gist.github.com/anonymous/8553178/raw/c0ddb67b6e92da35a815d3465c633e036df1a105/emacs.memory.leak.aka.distnoted.patch.diff")
+      p[:p0].push("http://sourceforge.jp/projects/macemacsjp/svn/view/inline_patch/trunk/emacs-inline.patch?view=co&revision=583&root=macemacsjp&pathrev=583")
+      # p[:p0].push("https://gist.github.com/anonymous/8142555/raw/d67ad1dc814579d125afbd18de3a62ba69895601/emacs-inline.patch")
     end
     p
   end unless build.head?
